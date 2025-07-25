@@ -31,3 +31,47 @@
 		width: calc(100% / 2);
 	}
 }
+
+/* Tambahkan ini ke file CSS Anda */
+
+.project-description {
+    text-align: justify; /* Ini akan membuat teks rata kanan-kiri */
+    line-height: 1.6;    /* Opsional: Meningkatkan keterbacaan */
+    margin-bottom: 15px; /* Opsional: Jarak di bawah deskripsi */
+}
+
+/* --- Kode CSS Anda yang sudah ada di bawah ini --- */
+
+.projects-logo-container {
+    display: flex;
+    justify-content: left;
+    padding-top: 25px;
+}
+
+.projects-logo {
+    display: flex;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    top: 4vh;
+    z-index: 999;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding-top: 120px;
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        padding-top: 60px;
+    }
+
+    .projects-project {
+        width: calc(100% / 2);
+    }
+}
